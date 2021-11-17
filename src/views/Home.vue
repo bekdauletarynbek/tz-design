@@ -1,20 +1,34 @@
 <template>
   <div class="home">
+    <header-t/>
+    <div class="body">
+      <div class="body-left">
+        <select-t :items="items"></select-t>
+      </div>
+      <div class="body-right">
 
-    <dots></dots>
+      </div>
+    </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-import dots from "@/components/dots";
-
+import headerT from "@/components/header";
+import selectT from "@/components/select";
 export default {
   name: 'Home',
+  data() {
+    return {
+      items: [
+
+      ]
+    }
+  },
   components: {
-    HelloWorld,
-    dots
+    headerT,
+    selectT
   }
 }
 </script>
