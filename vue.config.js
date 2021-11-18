@@ -1,3 +1,5 @@
 module.exports = {
-    publicPath: '/tz-design/'
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/kino-hd/'
+        : '/'
 }
