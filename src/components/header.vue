@@ -60,7 +60,28 @@ export default {
   }
   .right-part-head{
     display: flex;
+
+    margin-right: 20px;
     margin-left: auto;
+  }
+}
+@media (max-width: 768px) {
+  .head{
+    display: block;
+    .right-part-head{
+      margin-top: 20px;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .head{
+    .left-part-head{
+      padding: 0 5px;
+      h2{
+        overflow-wrap: break-word;
+      }
+    }
+    padding: 10px;
   }
 }
 </style>

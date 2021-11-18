@@ -11,7 +11,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 a{
   text-decoration: none;
   background-color: #ebedf7;
@@ -20,5 +20,10 @@ a{
   text-transform: uppercase;
   font-weight: 600;
   margin: 0;
+  transition: .3s all;
+  &:hover, &:focus-within{
+    background-color: #023047;
+    color: #ebedf7;
+  }
 }
 </style>

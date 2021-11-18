@@ -51,4 +51,15 @@ export default {
   }
 
 }
+
+@media (max-width: 425px) {
+  .general{
+    .dots{
+      padding: 0 10px;
+      .text{
+        right: 20px;
+      }
+    }
+  }
+}
 </style>
